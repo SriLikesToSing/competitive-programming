@@ -1,0 +1,4 @@
+
+
+def numDivisors(num):
+    

@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin >> t;
+
+   for(int x=0; x<N;x++) {
+    int n,x, a, b;
+    cin >> n >>  x >> a >> b;
+    if(x == 0){
+        cout << 1 << endl;;
+    }
+   int min =  std::min(a, b);
+   int max = std::max(a,b);
+
+    while(count <= 0 &&  max>=0 && min>=0 && min<=n) {
+        max++;
+        min--
+      }
+    }
+ }
+

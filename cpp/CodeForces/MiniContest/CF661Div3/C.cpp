@@ -1,0 +1,51 @@
+#include <iostream>
+#include <iostream>
+#include <bits/stdc++.h>
+#include <string>
+#include <numeric>
+#include <vector>
+#include <cmath>
+#include <map>
+#include <ctype.h>
+#include <set>
+#include <iterator>
+using namespace std;
+
+int main(){
+	int t; cin >> t;
+	cout << "hi" << endl;
+	for(int x=0; x<t; x++){
+		int n; cin >> n;
+		vector<int> arr;
+
+		for(int y=0; y<n; y++){
+			int num; cin >> num;
+			arr[y] = num;
+		}
+		sort(arr.begin(), arr.end());
+		vector<int> sums; 
+		
+
+		for(int y=0; y<n; y++){
+			for(int z=0; z<n; z++){
+				if(y == z){
+					continue;
+				}
+				sums.push_back[arr[y]+arr[z]];
+			}
+		}
+
+		sort(sums.begin(), sums.end());
+		int maxCount = INT_MIN;
+		int tempCount = 0;
+		for(int y=1; y<sums.size(); y++){
+			if(sums[y] != sums[y-1]){
+				maxCount = max(tempCount, maxCount);
+				continue;
+			}
+			tempCount++;
+		}
+
+		cout << maxCount << endl;
+	}
+}
