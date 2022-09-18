@@ -1,0 +1,42 @@
+'''
+the max sum cannot exceed 200p
+
+- 1 200p
+- 2 100p
+- 4 50p
+- 10 20p
+- 20 10p
+- 200 1p
+
+
+'''
+
+
+def coinSums(N):
+    DP = [0 for x in range(0, N)]
+    coins = [1, 2, 5, 10, 20, 50, 100, 200]
+    
+    DP[0] = 1
+    DP[1] = 2 
+
+    for x in range(1, N):
+        for y in coins:
+            if x+1<y:
+                break 
+            DP[x]+=DP[x-y]
+   
+    return DP[N-1] 
+
+print(coinSums(5))
+    
+
+
+
+
+
+
+
+
+
+
+

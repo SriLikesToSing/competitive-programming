@@ -1,0 +1,17 @@
+SciFiNovel Generator- 
+
+Goal: To write a scifi novel plot using machine learning and make it so that it can actually
+write something coherent which would actually make sense to the reader.
+
+- Find the right neural network
+	- How it works and best way to impliment it
+
+- find the good data in which the project can be based off on 
+	- webscraper??
+	- Free dataset ????
+- make a website that can present each story and an option to add new stories to the dataset when wished upon
+	- what framework???
+
+
+:-) 
+	
