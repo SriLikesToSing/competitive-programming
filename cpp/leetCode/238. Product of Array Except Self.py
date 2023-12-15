@@ -1,8 +1,10 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
 
+        #the trick is to use the notion of postfix and prefix products.
         #you can solve it in O(1) time if remove the use of two hash tables and 
         # combine it into one.
+
         answer = [1] * (len(nums))
         prefix = 1
         for x in range(0, len(nums)):
